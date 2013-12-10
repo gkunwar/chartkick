@@ -582,7 +582,7 @@
 
     // see if one series or multiple
     if (!isArray(series) || typeof series[0] !== "object" || isArray(series[0])) {
-      series = [{name: "Value", data: series}];
+      series = [{name: "Response Time", data: series}];
       opts.hideLegend = true;
     } else {
       opts.hideLegend = false;
